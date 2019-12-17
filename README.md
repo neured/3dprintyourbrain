@@ -101,7 +101,7 @@ Now, FreeSurfer creates a very nice 3D model of the surface. Which unfortunately
 # First, convert aseg.mgz into NIfTI format
 mri_convert $SUBJECTS_DIR/${subject}/mri/aseg.mgz $SUBJECTS_DIR/subcortical.nii
 
-# Second, binarize all Areas that you're not interested and inverse the binarization
+# Second, binarize all areas that you're not interested and inverse the binarization
 mri_binarize --i $SUBJECTS_DIR/subcortical.nii \
              --match 2 3 24 31 41 42 63 72 77 51 52 13 12 43 50 4 11 26 58 49 10 17 18 53 54 44 5 80 14 15 30 62 \
              --inv \
@@ -130,7 +130,7 @@ cp $SUBJECTS_DIR/subcortical.nii.gz $SUBJECTS_DIR/subcortical_tmp.nii.gz
 # Unzip this file
 gunzip -f $SUBJECTS_DIR/subcortical_tmp.nii.gz
 
-# Check all areas of interest for wholes and fill them out if necessary
+# Check all areas of interest for holes and fill them out if necessary
 for i in 7 8 16 28 46 47 60 251 252 253 254 255
 do
     mri_pretess $SUBJECTS_DIR/subcortical_tmp.nii \
