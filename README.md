@@ -140,7 +140,7 @@ do
 done
 
 # Binarize the whole volume
-fslmaths $SUBJECTS_DIR/subcortical_tmp.nii -bin $SUBJECTS_DIR/subcortical_bin.nii
+fslmaths $SUBJECTS_DIR/subcortical_tmp.nii -bin $SUBJECTS_DIR/subcortical_bin
 
 # Create a surface model of the binarized volume with mri_tessellate
 mri_tessellate $SUBJECTS_DIR/subcortical_bin.nii.gz 1 $SUBJECTS_DIR/subcortical
