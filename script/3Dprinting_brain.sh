@@ -78,7 +78,7 @@ mri_convert $SUBJECTS_DIR/mri/aseg.mgz $SUBJECTS_DIR/subcortical/subcortical.nii
 
 # Second, binarize all areas that you're not interested and inverse the binarization
 mri_binarize --i $SUBJECTS_DIR/subcortical/subcortical.nii \
-             --match 2 3 24 31 41 42 63 72 77 51 52 13 12 43 50 4 11 26 58 49 10 17 18 53 54 44 5 80 14 15 30 62 \
+             --match 2 3 24 31 41 42 63 72 77 51 52 13 12 43 50 4 11 26 58 49 10 44 5 80 14 15 30 62 \
              --inv \
              --o $SUBJECTS_DIR/subcortical/bin.nii
 
