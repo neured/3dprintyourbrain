@@ -2,7 +2,7 @@
 #3dprintyourbrain
 
 # >>> PREREQUISITES:
-#     Install FreeSurfer (v6.0.0), FSL and MeshLab on Linux.   
+#     Install FreeSurfer (v6.0.0 or higher), FSL and MeshLab on Linux.
 # 
 # >>> FOLDER STRUCTURE:
 #     3dbrain  -----   sub-01  -- input  -- struct.nii or struct.nii.gz
